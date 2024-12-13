@@ -400,7 +400,7 @@ footer {
 }
 
 /* End Footer */
-@media (max-width: 360px) {
+@media (max-width: 375px) {
     p {
         font-size: 14px;
         line-height: 1.6rem;
