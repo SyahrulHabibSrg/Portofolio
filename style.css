@@ -30,6 +30,7 @@ a {
     border: 1.5px solid rgba(212, 233, 226, 1);
     cursor: pointer;
     color: rgba(212, 233, 226, 1);
+    margin-bottom: 1rem;
 }
 
 .pre-title {
@@ -56,7 +57,7 @@ a {
 .nav {
     display: flex;
     justify-content: space-between;
-    padding: 2rem ;
+    padding: 2rem;
     margin-right: 8rem;
     transition: 0.2s ease-in-out;
 }
@@ -140,6 +141,7 @@ section {
     padding: 3rem;
     margin: 0 4rem;
 }
+
 /* End Of About */
 
 /* Skills */
@@ -187,6 +189,7 @@ section {
     font-size: 1rem;
     color: rgba(212, 233, 226, 1);
 }
+
 /* End Skilss */
 
 /* Experience */
@@ -236,6 +239,7 @@ section {
     color: grey;
     margin-bottom: 10px;
 }
+
 /* End Experience */
 
 /* Contact */
@@ -244,7 +248,8 @@ section {
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 1s forwards; /* Animasi fade-in */
+    animation: fadeInUp 1s forwards;
+    /* Animasi fade-in */
 }
 
 .section-title-contact {
@@ -310,7 +315,7 @@ section {
 }
 
 .popup-contact {
-    display: none; 
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -330,7 +335,7 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.popup-content p{
+.popup-content p {
     color: rgba(30, 57, 50, 1);
     padding: 1rem 2rem;
 }
@@ -375,8 +380,8 @@ footer {
 }
 
 .social-link {
-    width: 40px; 
-    height: 40px; 
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -393,6 +398,193 @@ footer {
     transform: scale(1.2);
     filter: brightness(0.8);
 }
+
 /* End Footer */
+@media (max-width: 360px) {
+    p {
+        font-size: 14px;
+        line-height: 1.6rem;
+        color: rgba(212, 233, 226, 1);
+    }
 
+    .main-container {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 0 auto;
+    }
 
+    .btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .pre-title {
+        font-size: 0.8rem;
+        padding-left: 20px;
+    }
+
+    .pre-title::before {
+        width: 10px;
+        height: 1px;
+        top: 40px;
+    }
+
+    .nav {
+        flex-direction: flex;
+        align-items: center;
+        padding: 1rem 0;
+        margin-right: 0;
+    }
+
+    .nav ul {
+        font-size: 1rem;
+        flex-direction: flex;
+        gap: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    #home {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .home-name {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .home-right img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* About */
+    #about {
+        padding: 2rem 1rem;
+    }
+
+    .section-title-about {
+        font-size: 30px;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about p {
+        padding: 1.5rem;
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+
+    /* Skills */
+    #skills {
+        padding: 2rem 1rem;
+    }
+
+    .section-title-skills {
+        font-size: 30px;
+    }
+
+    .skills-container {
+        gap: 10px;
+    }
+
+    .skill {
+        width: 80px;
+    }
+
+    .skill img {
+        width: 60px;
+    }
+
+    .skill p {
+        font-size: 0.8rem;
+    }
+
+    /* Experience */
+    .section-title-experience {
+        font-size: 30px;
+    }
+
+    .experience-container {
+        padding: 0 1rem;
+        gap: 10px;
+    }
+
+    .experience-item {
+        padding: 15px;
+    }
+
+    .experience-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .experience-p {
+        font-size: 0.9rem;
+    }
+
+    .experience-date {
+        font-size: 0.8rem;
+    }
+
+    /* Contact */
+    #contact {
+        padding: 2rem 1rem;
+    }
+
+    .section-title-contact {
+        font-size: 30px;
+    }
+
+    .contact-form {
+        padding: 2rem 1rem;
+        gap: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .popup-content {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .popup-content p {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px 0;
+    }
+
+    .footer-container p {
+        font-size: 0.8rem;
+    }
+
+    .social-link {
+        width: 30px;
+        height: 30px;
+    }
+}
+}
