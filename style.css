@@ -400,6 +400,7 @@ footer {
 }
 
 /* End Footer */
+
 @media (max-width: 375px) {
     p {
         font-size: 14px;
@@ -432,7 +433,7 @@ footer {
     .nav {
         flex-direction: flex;
         align-items: center;
-        padding: 1rem 0;
+        padding: 1rem 1rem;
         margin-right: 0;
     }
 
